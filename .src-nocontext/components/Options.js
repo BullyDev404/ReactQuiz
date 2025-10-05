@@ -1,7 +1,4 @@
-import { useQuiz } from "../contexts/quizContext";
-
-function Options() {
-  const { question, answer, dispatch } = useQuiz();
+function Options({ question, answer, dispatch }) {
   const hasAnswered = answer !== null;
 
   return (

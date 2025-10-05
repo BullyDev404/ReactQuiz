@@ -5,6 +5,8 @@ function reducer(state, action) {
 }
 
 function DateCounter() {
+  // const [count, setCount] = useState(0);
+  // const [step, setStep] = useState(1);
 
   const initialState = {
     count: 0,
@@ -21,6 +23,9 @@ function DateCounter() {
 
   const dec = function () {
     dispatch({ type: "dec" });
+
+    // setCount((count) => count - 1);
+    // setCount((count) => count - step);
   };
 
   const inc = function () {
